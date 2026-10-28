@@ -1,84 +1,72 @@
-# ⚡ FinPulse — Autonomous Smart Budget & Wealth Intelligence Engine
+# ⚡ FinPulse — Smart Budget & Wealth Intelligence Engine
 
 [![React Native](https://img.shields.io/badge/React%20Native-0.88.0-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
 [![Expo SDK](https://img.shields.io/badge/Expo%20SDK-58.0-000020?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/)
 [![React](https://img.shields.io/badge/React-19.3.0-blue?style=for-the-badge&logo=react)](https://react.dev/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES2024-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/)
-[![AsyncStorage](https://img.shields.io/badge/Storage-AsyncStorage%20v2.2-0284C7?style=for-the-badge&logo=sqlite&logoColor=white)](https://react-native-async-storage.github.io/async-storage/)
-[![Academic Score](https://img.shields.io/badge/Rubric%20Score-75%20%2F%2075%20(100%25)-10B981?style=for-the-badge&logo=target)](https://github.com/)
+[![Storage](https://img.shields.io/badge/Storage-AsyncStorage%20v2.2-0284C7?style=for-the-badge&logo=sqlite&logoColor=white)](https://react-native-async-storage.github.io/async-storage/)
+[![License](https://img.shields.io/badge/License-MIT-10B981?style=for-the-badge)](LICENSE)
 
-> **Next-Generation Personal Finance Management, Multi-Tenant Administrative Oversight, and Algorithmic 50/30/20 Wealth Intelligence Mobile Platform.**  
-> Designed and engineered for the **Master of Computer Applications (MCA) — Semester III End-of-Semester (EoS) Practical Examination (75 Marks)**.
-
----
-
-## 📑 Executive Overview
-
-**FinPulse** is a production-grade, offline-first mobile application architected to elevate personal financial health tracking into an autonomous wealth advisory experience. Unlike traditional boilerplate expense trackers that merely store historical figures, FinPulse incorporates:
-
-1. **Dual-Role Role-Based Architecture (Customer vs. Admin)** with strict permission segregation.
-2. **Interactive Administrative Customer Inspector** with granular transaction-level drilldowns.
-3. **Macro Platform Analytics** equipped with dynamic horizontal customer filter pills.
-4. **Algorithmic 50/30/20 Financial Health Engine** providing real-time compliance scoring and burn-rate allowances.
-5. **Smart Savings Vault (Piggy Bank Goals)** with milestone tracking and instant deposit mechanisms.
-6. **Zero-Alert In-App Feedback System** replacing OS-native alert boxes with sleek, branded micro-modals.
-7. **Curated Fintech Palette**: Royal Sapphire Blue (`#1E40AF`), Electric Ocean Azure (`#0284C7`), and Crisp Ice Blue (`#EFF6FF`).
+> **FinPulse** is a modern, high-performance personal finance management and administrative wealth intelligence mobile application built with **React Native**, **Expo (SDK 58)**, and **JavaScript**.
 
 ---
 
-## 🏆 Assessment Rubric Compliance Matrix (Full 75 / 75 Marks)
+## 📱 Product Overview
 
-| Part | Component / Requirement | Allocated Marks | Realized Implementation | Status |
-| :---: | :--- | :---: | :--- | :---: |
-| **Part I** | **1. Home Screen with Sign Up & Sign In** | 5 | Clean branded hero, role-based login validation, instant demo user switcher | **5 / 5** ✅ |
-| | **2. Analysis Screen (Admin & Customer)** | 5 | Income vs Expense ratio, category spend distribution, admin customer filter pills | **5 / 5** ✅ |
-| | **3. Profile & Edit Profile (Customer)** | 5 | Strict Customer isolation, interactive Avatar preset selector, read-only Admin security | **5 / 5** ✅ |
-| | **4. Transaction (Month-wise) Screen** | 5 | Horizontal calendar month selector (Jan–Dec), dynamic search, swipe actions | **5 / 5** ✅ |
-| | **5. Overall Categories Screen** | 5 | 10 distinct categories, live budget progress tracks, custom category creation | **5 / 5** ✅ |
-| | **6. Category Details Screen** | 5 | Category-scoped ledger, summary metrics, month filtering, backward navigation | **5 / 5** ✅ |
-| **Part II** | **(i) Stack Navigation** | 10 | Native Stack (`@react-navigation/native-stack`) for Auth & Details flows | **10 / 10** ✅ |
-| | **(ii) Bottom Tabs Navigation** | 10 | Curved floating glassmorphic tab bar with active badge indicators | **10 / 10** ✅ |
-| | **(iii) Drawer Navigation (Custom)** | 10 | Custom drawer content with user identity header, role badge & sign-out modal | **10 / 10** ✅ |
-| **Part III** | **(i) Screen Navigation by Role** | 5 | Unidirectional navigation teardown; Customers restricted from Admin control plane | **5 / 5** ✅ |
-| | **(ii) Personalized Alerts Engine** | 5 | Contextual greeting: `"Hi [User], your transaction has been added successfully."` | **5 / 5** ✅ |
-| | **(iii) Periodical Reports Engine** | 5 | Dedicated Daily, Weekly, and Monthly financial aggregation engine | **5 / 5** ✅ |
-| **TOTAL** | **Full Project Evaluation** | **75 Marks** | **Comprehensive Full Implementation** | **75 / 75 (100%)** 🌟 |
+FinPulse bridges the gap between basic expense recorders and full-fledged autonomous financial assistants. Built with a bespoke **Royal Sapphire Blue (`#1E40AF`)** and **Electric Ocean Azure (`#0284C7`)** design system, it delivers an intuitive, glassmorphic UI paired with powerful financial algorithms.
+
+The platform provides complete role-based segregation:
+- **Customers** manage personal cash flow, set digital savings milestones, analyze 50/30/20 budget compliance, and track month-wise expenses.
+- **Administrators** monitor system-wide aggregate volumes, inspect customer expense portfolios in real time, and view platform-wide macro analytics.
 
 ---
 
-## 🌟 Unique Standout Innovations (Competitive Edge)
+## ✨ Key Features
 
-### 1. 🛡️ Admin "Customer Expense Inspector"
-- **The Problem**: Standard academic submissions provide a static Admin dashboard with dummy cards or duplicate the customer screen.
-- **FinPulse Innovation**: We built `AdminCustomersScreen.js`. The Admin views every customer's net balance, total income, total outflow, and transaction frequency. Tapping any customer opens an **Interactive Inspector Bottom Sheet** displaying that specific customer's category spending distribution and historical ledger.
+### 1. 🧠 50/30/20 Financial Health & Wealth Advisor
+- **Algorithmic Scoring (0 – 100)**: Evaluates live spending discipline, savings surplus, and budget health.
+- **50/30/20 Rule Breakdown**:
+  - **Needs (≤ 50%)**: Rent, utilities, food, and essentials.
+  - **Wants (≤ 30%)**: Shopping, leisure, dining, and subscriptions.
+  - **Savings (≥ 20%)**: Retained net surplus.
+- **Safe Daily Allowance**: Calculates daily burn-rate limit based on remaining billing cycle days.
+- **Actionable AI Recommendations**: Tailored cost-cutting insights based on real-time transaction activity.
 
-### 2. 📊 Macro Analysis with Dynamic Customer Filter Pills
-- In `AnalysisScreen.js`, Admin mode renders a horizontal scrolling pill selector:
-  ```
-  [ All Platform ] [ Priya Sharma ] [ Kishore Kumar ] [ Anita Roy ]
-  ```
-  Selecting any pill re-computes stats, income-to-expense ratios, and category allocations instantaneously for that individual user without reloading the screen.
+### 2. 🎯 Smart Savings Vault (Milestone Goals)
+- Create target pots with custom goals (*Emergency Fund*, *Tech Upgrade*, *Vacation & Travel*).
+- Interactive quick-deposit pills (`+₹500`, `+₹1,000`, `+₹2,000`, `+₹5,000` or custom amounts).
+- Real-time progress bars and milestone completion badges (*🎉 Target Achieved!*).
 
-### 3. 🚫 Zero Default Alert Dialogs (`FeedbackModal.js`)
-- Standard React Native applications default to `Alert.alert("Success", "Saved")`, which looks dated and OS-dependent.
-- FinPulse uses an integrated in-app micro-modal system:
-  - 48px clean checkmark circle.
-  - Contextual messages (`"Hi Priya Sharma, your transaction has been added successfully."`).
-  - Native callback chaining (`onClose: () => navigation.goBack()`).
+### 3. 👥 Dedicated Admin Control Hub & Customer Inspector
+- **Platform Financial Summary**: Real-time aggregate net volume, platform inflow, and outflow across all active users.
+- **Customer Directory & Inspector**: Search through registered customers and tap into an individual customer's expense breakdown, category allocations, and historical ledger.
+- **Macro Analysis with Customer Filter Pills**: Dynamic selector (`[All Platform] [Priya Sharma] [Kishore Kumar] [Anita Roy]`) allowing instant metric re-computation for any individual customer or platform-wide.
+- **Strict Read-Only Admin Security**: Administrative credentials are protected, keeping personal profile editing customer-exclusive.
 
-### 4. 🧠 FinPulse AI Financial Health & 50/30/20 Wealth Advisor
-- Tapping the **Monthly Budget Health** card on the dashboard invokes `FinancialHealthModal.js`:
-  - **Financial Health Score (0 - 100)**: Evaluates saving discipline and ratio stability.
-  - **50/30/20 Rule Compliance**: Automatically classifies ledger records into **Needs (≤ 50%)**, **Wants (≤ 30%)**, and **Savings (≥ 20%)** with visual track bars.
-  - **Safe Daily Allowance**: Calculates daily safe spending limit based on remaining billing cycle days.
-  - **Dynamic Algorithmic Advice**: Actionable cost-cutting recommendations based on live spending patterns.
+### 4. 📅 Month-Wise Ledger & Smart Transactions
+- Horizontal calendar month selector (Jan – Dec 2026) with dynamic year switching.
+- Add Transaction modal with income/expense segmented toggles, category tagging, date pickers, and notes.
+- Quick search and instant swipe/delete actions with confirmation prompts.
 
-### 5. 🎯 Smart Savings Vault (Milestone Goals)
-- In `SavingsGoalsSection.js`, customers create and track milestone targets (e.g. *Emergency Fund*, *Tech Upgrade*, *Travel & Vacation*).
-- Features quick-deposit buttons (`+₹500`, `+₹1,000`, `+₹2,000`, `+₹5,000`), live percentage completion tracks, and completion badges (`🎉 Target Achieved!`).
+### 5. 🏷️ Overall Categories & Dynamic Category Details
+- 10 core financial categories with custom icons and color schemes.
+- Visual spending progress bars for every category against historical averages.
+- Tapping any category opens a dedicated details screen filtering transactions and calculating totals for that specific category.
 
-### 6. 🎭 Avatar Preset Selector & Initial Fallback Engine (`UserAvatar.js`)
-- Reusable avatar component supporting curated SVG/PNG preset avatars, network image URLs, verified badge indicators, and offline fallback initials.
+### 6. 📊 Periodical Financial Reports
+- **Daily View**: Granular transaction breakdown for the current 24-hour cycle.
+- **Weekly View**: 7-day rolling financial performance and net cash flow.
+- **Monthly View**: Comprehensive 30-day overview with category-wise spending ranking.
+
+### 7. 👤 Customer Profile & Avatar Preset Engine
+- Interactive avatar picker with curated illustrated presets.
+- Dynamic network image loading with graceful offline initials fallback.
+- Customer-only profile editing (name, email, phone, occupation, avatar).
+
+### 8. 🚫 Zero-Alert In-App Feedback System (`FeedbackModal.js`)
+- Replaces dated OS-native alert dialogs with sleek, branded micro-modals.
+- Contextual personalized messages: `"Hi [Name], your transaction has been added successfully."`
+- Seamless callback navigation chaining.
 
 ---
 
@@ -86,20 +74,20 @@
 
 ```mermaid
 graph TD
-    App[App.js Root] --> Safe[SafeAreaProvider]
+    App[App.js] --> Safe[SafeAreaProvider]
     Safe --> AuthCtx[AuthProvider - AsyncStorage]
     AuthCtx --> NotifCtx[NotificationProvider - FeedbackModal]
     NotifCtx --> TxnCtx[TransactionProvider - Reactive State]
     TxnCtx --> RootNav{RootNavigator}
 
-    RootNav -->|!isAuthenticated| AuthStack[AuthNavigator - Stack]
+    RootNav -->|Guest| AuthStack[AuthNavigator - Stack]
     AuthStack --> Welcome[WelcomeScreen]
     AuthStack --> SignIn[SignInScreen]
     AuthStack --> SignUp[SignUpScreen]
 
-    RootNav -->|role === 'customer'| CustStack[CustomerStackNavigator - Stack]
+    RootNav -->|Customer| CustStack[CustomerStackNavigator - Stack]
     CustStack --> CustDrawer[CustomerDrawerNavigator - Drawer]
-    CustDrawer --> CustTabs[CustomerTabNavigator - Floating Bottom Tabs]
+    CustDrawer --> CustTabs[CustomerTabNavigator - Bottom Tabs]
     CustTabs --> Dash[Dashboard]
     CustTabs --> Anal[Analysis]
     CustTabs --> Cats[Categories]
@@ -109,7 +97,7 @@ graph TD
     CustStack --> CatDetail[CategoryDetailsScreen]
     CustStack --> EditProf[EditProfileScreen]
 
-    RootNav -->|role === 'admin'| AdminDrawer[AdminDrawerNavigator - Drawer]
+    RootNav -->|Admin| AdminDrawer[AdminDrawerNavigator - Drawer]
     AdminDrawer --> AdminTabs[AdminTabNavigator - 4 Floating Tabs]
     AdminTabs --> Hub[Admin Control Hub]
     AdminTabs --> CustDir[Customer Directory & Inspector]
@@ -119,18 +107,17 @@ graph TD
 
 ---
 
-## 📂 Source Code Tree
+## 📂 Project Structure
 
 ```
 REACT-NATIVE-HACK/
 ├── assets/                       # Custom adaptive icons and branding assets
-├── docs/                         # Examination rubric specification
 ├── src/
 │   ├── components/
-│   │   ├── AddTransactionModal.js # Modal form with income/expense validation
+│   │   ├── AddTransactionModal.js # Transaction entry modal with validation
 │   │   ├── CategoryCard.js        # Category tile with budget progress bar
-│   │   ├── CustomButton.js        # Haptic-ready button (Primary, Outline, Danger)
-│   │   ├── CustomInput.js         # Input field with label & password toggle
+│   │   ├── CustomButton.js        # Button components (Primary, Outline, Danger)
+│   │   ├── CustomInput.js         # Input field with labels & secure text toggle
 │   │   ├── EmptyState.js          # Engaging zero-state illustration
 │   │   ├── FeedbackModal.js       # Minimalist in-app confirmation modal
 │   │   ├── FinancialHealthModal.js# 50/30/20 Wealth intelligence advisor
@@ -144,7 +131,7 @@ REACT-NATIVE-HACK/
 │   │   ├── NotificationContext.js # Centralized modal toast manager
 │   │   └── TransactionContext.js  # Ledger state, calculations & filters
 │   ├── data/
-│   │   └── demoData.js            # Initialized demo users & realistic transactions
+│   │   └── demoData.js            # Initial demo users & realistic transactions
 │   ├── navigation/
 │   │   ├── AdminDrawerNavigator.js# Admin administrative drawer
 │   │   ├── AdminTabNavigator.js   # Admin 4-tab floating bottom bar
@@ -160,7 +147,7 @@ REACT-NATIVE-HACK/
 │   │   │   └── AdminDashboardScreen.js # Platform volume & audit hub
 │   │   ├── auth/
 │   │   │   ├── SignInScreen.js    # Quick-login pills & role validation
-│   │   │   ├── SignUpScreen.js    # Customer account onboarding
+│   │   │   ├── SignUpScreen.js    # Customer onboarding
 │   │   │   └── WelcomeScreen.js   # Fintech hero landing screen
 │   │   └── customer/
 │   │       ├── AnalysisScreen.js        # 50/30/20 ratios & customer pills
@@ -181,66 +168,46 @@ REACT-NATIVE-HACK/
 │       └── validation.js          # Form validators & sanitizers
 ├── App.js                         # Application entrypoint & Provider hierarchy
 ├── app.json                       # Expo application manifest
-├── LICENSE                        # Custom MIT License
-└── package.json                   # Dependencies (SDK 58 & React 19)
+├── LICENSE                        # MIT License
+└── package.json                   # Dependencies (Expo SDK 58 & React 19)
 ```
 
 ---
 
-## 👥 Demo Credentials & Test Accounts
+## 👥 Demo Accounts
 
 | Role | Name | Email | Password | Primary Permissions |
 | :--- | :--- | :--- | :--- | :--- |
-| **Customer** | Priya Sharma | `customer@example.com` | `customer123` | Personal Dashboard, Ledger, Categories, Goals, Profile Edit |
+| **Customer** | Priya Sharma | `customer@example.com` | `customer123` | Personal Dashboard, Ledger, Categories, Vault, Profile Edit |
 | **Customer** | Kishore Kumar | `kishore@example.com` | `customer123` | Personal Portfolio, Budget Tracking, Savings Goals |
 | **Customer** | Anita Roy | `anita@example.com` | `customer123` | Personal Ledger, Periodical Reports |
 | **Admin** | Admin Supervisor | `admin@example.com` | `admin123` | Platform Hub, Customer Directory & Inspector, Macro Analysis, System Reports |
 
-> **Quick Switcher**: The Sign-In screen contains quick demo-fill buttons (`[Customer]` and `[Admin]`) to populate credentials with a single tap.
+> **Single-Tap Sign In**: The Sign-In screen includes demo quick-fill buttons (`[Customer]` and `[Admin]`) to populate credentials instantly.
 
 ---
 
-## 🛠️ Installation & Execution
+## 🛠️ Getting Started
 
 ### Prerequisites
-- Node.js (v18.0.0 or higher)
-- Expo Go App on Android / iOS or Android Studio Emulator
+- [Node.js](https://nodejs.org/) (v18.0.0 or higher recommended)
+- [Expo Go](https://expo.dev/go) app installed on your physical mobile device, or an Android/iOS emulator
 
-### Setup Commands
+### Installation & Run
+
 ```bash
-# Clone the repository
-git clone <repository-url>
-cd REACT-NATIVE-HACK
+# 1. Clone the repository
+git clone https://github.com/gokul479/Fin-Pulse.git
+cd Fin-Pulse
 
-# Install dependencies (SDK 58 compatible)
+# 2. Install dependencies (SDK 58 compatible)
 npx expo install
 
-# Start the Expo Metro Development Server
+# 3. Start the development server
 npx expo start
 ```
 
-### Verification & Quality Assurance
-```bash
-# Typecheck TypeScript definitions
-npx tsc --noEmit
-
-# Diagnose project configuration
-npx expo-doctor
-
-# Bundler integrity export check
-npx expo export -p android --no-minify --no-bytecode
-```
-
----
-
-## 📜 Examination Declaration
-
-This software project is submitted as an original work for the **MCA Semester III End-of-Semester (EoS) Practical Examination**. All rubric requirements (Part I, Part II, and Part III) have been implemented, tested, and validated in strict accordance with examination guidelines.
-
-* **Academic Year**: 2025 – 2026
-* **Program**: Master of Computer Applications (MCA)
-* **Course Code / Subject**: Mobile Application Development (React Native & Expo)
-* **Author / Candidate**: FinPulse Development Team
+Scan the QR code displayed in your terminal using the **Expo Go** application (Android) or the **Camera app** (iOS) to launch the app instantly.
 
 ---
 
